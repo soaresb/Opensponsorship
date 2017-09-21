@@ -22,7 +22,7 @@ mongoose.connection.on('error', (err) =>{
 
 app.use(cors());
 
-app.use(express.static(path.join(__dirname, 'client')));
+app.use(express.static(path.join(__dirname, 'public')));
 
 app.use(bodyParser.json());
 
