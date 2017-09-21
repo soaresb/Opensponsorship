@@ -1,0 +1,126 @@
+
+<form (submit)="addProfile()">
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h3 class="panel-title">Basic Info</h3>
+    </div>
+    <div class="panel-body">
+  <div class="form-group">
+    <label>Name</label>
+    <input type="text" class="form-control" id="name" [(ngModel)]="name" name="name">
+
+  </div>
+  <div class="form-group">
+    <label>Date of Birth</label>
+    <input type="text" class="form-control" id="dob" [(ngModel)]="dob" name="dob" placeholder="mm/dd/yyyy">
+  </div>
+  <div class="form-group">
+    <label>Nationality</label>
+    <input type="text" class="form-control" id="nationality" [(ngModel)]="nationality" name="nationality">
+  </div>
+  <div class="form-group">
+    <label>Location</label>
+    <input type="text" class="form-control" id="location" [(ngModel)]="location" name="location">
+  </div>
+  <div class="form-group">
+    <label>Association</label>
+    <input type="text" class="form-control" id="association" [(ngModel)]="association" name="association">
+  </div>
+  <div class="form-group">
+    <label>Team </label>
+    <input type="text" class="form-control" id="team" [(ngModel)]="team" name="team">
+  </div>
+
+  <div class="form-group">
+    <label>Gender</label>
+    <select class="form-control" id="gender" [(ngModel)]="gender" name="gender">
+      <option>Male</option>
+      <option>Female</option>
+      <option>Other</option>
+    </select>
+  </div>
+  <div class="form-group">
+    <label>Sports</label>
+    <input type="text" class="form-control" id="sports" [(ngModel)]="sports" name="sports">
+  </div>
+</div>
+</div>
+<div class="panel panel-default">
+  <div class="panel-heading">
+    <h3 class="panel-title">About</h3>
+  </div>
+  <div class="panel-body">
+  <div class="form-group">
+    <label>Description</label>
+    <textarea class="form-control" id="about" rows="4" [(ngModel)]="about" name="about"></textarea>
+  </div>
+  <div class="form-group">
+    <label>Interests</label>
+    <textarea class="form-control" id="interests" rows="4" [(ngModel)]="interests" name="interests"></textarea>
+  </div>
+  <div class="form-group">
+    <label>Charities</label>
+    <input type="text" class="form-control" id="charities" [(ngModel)]="charities" name="charities">
+  </div>
+  <div class="form-group">
+    <label>Pets</label>
+    <input type="text" class="form-control" id="pets" [(ngModel)]="pets" name="pets">
+  </div>
+  <div class="form-group">
+    <label>Drinks Alcohol</label>
+    <select class="form-control" id="drinks" [(ngModel)]="drinks" name="drinks">
+      <option>Yes</option>
+      <option>No</option>
+    </select>
+  </div>
+  <div class="form-group">
+    <label>Married</label>
+    <select class="form-control" id="married" [(ngModel)]="married" name="married">
+      <option>Yes</option>
+      <option>No</option>
+    </select>
+  </div>
+</div>
+</div>
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h3 class="panel-title">Social Media</h3>
+    </div>
+  <div class="panel-body">
+  <div class="form-group">
+    <label>Facebook</label>
+    <input type="text" class="form-control" id="facebook" [(ngModel)]="facebook" name="facebook">
+  </div>
+  <div class="form-group">
+    <label>Instagram</label>
+    <input type="text" class="form-control" id="instagram" [(ngModel)]="instagram" name="instagram">
+  </div>
+  <div class="form-group">
+    <label>Twitter</label>
+    <input type="text" class="form-control" id="twitter" [(ngModel)]="twitter" name="twitter">
+  </div>
+  <div class="form-group">
+    <label>Snapchat</label>
+    <input type="text" class="form-control" id="snapchat" [(ngModel)]="snapchat" name="snapchat">
+  </div>
+  <div class="form-group">
+    <label>Youtube</label>
+    <input type="text" class="form-control" id="Youtube" [(ngModel)]="youtube" name="youtube">
+  </div>
+  <div class="form-group">
+    <label>Twitch</label>
+    <input type="text" class="form-control" id="twitch" [(ngModel)]="twitch" name="twitch">
+  </div>
+</div>
+</div>
+
+  <br/>
+  <br/>
+  <br/>
+  <br/>
+  <input type="submit" class="btn btn-primary" value="Add Profile">
+  <br/>
+  <br/>
+  <br/>
+  <br/>
+</form>
