@@ -26,7 +26,6 @@ var AuthService = (function () {
         this.http = http;
     }
     AuthService.prototype.addProf = function (profile) {
-        //console.log(profile);
         var headers = new __WEBPACK_IMPORTED_MODULE_1__angular_http__["b" /* Headers */]();
         headers.append('Content-Type', 'application/json');
         return this.http.post('routes/addprofile', profile, { headers: headers })
