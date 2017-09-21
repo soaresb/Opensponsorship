@@ -29,13 +29,13 @@ var AuthService = (function () {
         //console.log(profile);
         var headers = new __WEBPACK_IMPORTED_MODULE_1__angular_http__["b" /* Headers */]();
         headers.append('Content-Type', 'application/json');
-        return this.http.post('/routes/addprofile', profile, { headers: headers })
+        return this.http.post('routes/addprofile', profile, { headers: headers })
             .map(function (res) { return res.json(); });
     };
     AuthService.prototype.getProf = function () {
         var headers = new __WEBPACK_IMPORTED_MODULE_1__angular_http__["b" /* Headers */]();
         headers.append('Content-Type', 'application/json');
-        return this.http.get('/routes/profiles', { headers: headers })
+        return this.http.get('routes/profiles', { headers: headers })
             .map(function (res) { return res.json(); });
     };
     AuthService = __decorate([
